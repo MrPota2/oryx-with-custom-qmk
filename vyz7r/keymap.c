@@ -383,3 +383,18 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
   return true;
 }
 
+bool get_hold_on_other_key_press(uint16_t keycode, keyrecord_t *record) {
+    switch (keycode) {
+        case SFT_T(KC_D):
+        case CTL_T(KC_F):
+        case ALT_T(KC_S):
+
+        case SFT_T(KC_J):
+        case CTL_T(KC_H):
+        case ALT_T(KC_K):
+            return true;
+
+        default:
+            return false;
+    }
+}
