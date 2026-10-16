@@ -389,9 +389,9 @@ bool get_hold_on_other_key_press(uint16_t keycode, keyrecord_t *record) {
         case CTL_T(KC_F):
         case ALT_T(KC_S):
 
-        case SFT_T(KC_J):
-        case CTL_T(KC_H):
-        case ALT_T(KC_K):
+        case RSFT_T(KC_J):
+        case RCTL_T(KC_H):
+        case RALT_T(KC_K):
             return true;
 
         default:
