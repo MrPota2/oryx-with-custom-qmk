@@ -29,7 +29,6 @@
 #define NRW_HASH S(KC_3)
 #define NRW_ASTR S(KC_NUHS)
 #define NRW_EQL S(KC_0)
-#define NRW_PLUS KC_MINS
 #define NRW_CIRC S(KC_RBRC)
 #define KC_PC_COPY LCTL(KC_C)
 #define KC_PC_PASTE LCTL(KC_V)
