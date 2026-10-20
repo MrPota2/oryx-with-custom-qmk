@@ -389,7 +389,7 @@ bool get_hold_on_other_key_press(uint16_t keycode, keyrecord_t *record) {
         case CTL_T(KC_F):
         case ALT_T(KC_S):
         case LT(2, KC_A):
-        case LT(3, KC_G):
+        case LT(3, KC_SPC):
 
         case RSFT_T(KC_J):
         case RCTL_T(KC_H):
