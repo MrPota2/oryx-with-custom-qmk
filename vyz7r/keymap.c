@@ -16,17 +16,17 @@ enum custom_keycodes {
 
 
 
-#define DUAL_FUNC_0 LT(10, KC_E)
-#define DUAL_FUNC_1 LT(9, KC_F16)
-#define DUAL_FUNC_2 LT(8, KC_U)
-#define DUAL_FUNC_3 LT(5, KC_F)
-#define DUAL_FUNC_4 LT(10, KC_F22)
-#define DUAL_FUNC_5 LT(3, KC_K)
-#define DUAL_FUNC_6 LT(1, KC_F11)
-#define DUAL_FUNC_7 LT(9, KC_F21)
-#define DUAL_FUNC_8 LT(13, KC_F5)
-#define DUAL_FUNC_9 LT(2, KC_1)
-#define DUAL_FUNC_10 LT(13, KC_F17)
+#define DUAL_FUNC_0 LT(5, KC_5)
+#define DUAL_FUNC_1 LT(11, KC_K)
+#define DUAL_FUNC_2 LT(2, KC_4)
+#define DUAL_FUNC_3 LT(13, KC_K)
+#define DUAL_FUNC_4 LT(1, KC_O)
+#define DUAL_FUNC_5 LT(11, KC_X)
+#define DUAL_FUNC_6 LT(9, KC_F)
+#define DUAL_FUNC_7 LT(14, KC_3)
+#define DUAL_FUNC_8 LT(12, KC_5)
+#define DUAL_FUNC_9 LT(14, KC_F6)
+#define DUAL_FUNC_10 LT(6, KC_L)
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [0] = LAYOUT_moonlander(
@@ -48,7 +48,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [2] = LAYOUT_moonlander(
     KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,                                 KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, 
     KC_TRANSPARENT, KC_TRANSPARENT, KC_F1,          KC_F2,          KC_F3,          KC_F4,          KC_TRANSPARENT,                                 KC_TRANSPARENT, KC_TRANSPARENT, KC_7,           KC_8,           KC_9,           NRW_EQL,        KC_TRANSPARENT, 
-    KC_TRANSPARENT, KC_TRANSPARENT, KC_F5,          KC_F6,          KC_F7,          KC_F8,          KC_TRANSPARENT,                                                                 KC_TRANSPARENT, KC_TRANSPARENT, KC_4,           KC_5,           KC_6,           KC_TRANSPARENT, NRW_SLSH,       
+    KC_TRANSPARENT, KC_TRANSPARENT, KC_F5,          KC_F6,          KC_F7,          KC_F8,          KC_TRANSPARENT,                                                                 KC_TRANSPARENT, KC_TRANSPARENT, KC_4,           KC_5,           KC_6,           NRW_PLUS,       NRW_SLSH,       
     KC_TRANSPARENT, KC_TRANSPARENT, KC_F9,          KC_F10,         KC_F11,         KC_F12,                                         KC_TRANSPARENT, KC_1,           DUAL_FUNC_10,   KC_3,           NRW_MINS,       KC_TRANSPARENT, 
     KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,                                                                                                 KC_TRANSPARENT, KC_TRANSPARENT, KC_0,           KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, 
     KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,                 KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT
