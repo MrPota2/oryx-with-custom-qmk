@@ -401,3 +401,18 @@ bool get_hold_on_other_key_press(uint16_t keycode, keyrecord_t *record) {
             return false;
     }
 }
+
+// Same-hand chords that should settle as a hold immediately,
+// overriding Chordal Hold's default "same hand = tap" rule.
+static bool force_chordal_hold(uint16_t tap_hold_keycode, uint16_t other_keycode) {
+    // L (hold -> layer 1) + "." (-> * on layer 1)
+    return tap_hold_keycode == LT(1, KC_L) && other_keycode == DUAL_FUNC_0;
+}
+
+bool get_chordal_hold(uint16_t tap_hold_keycode, keyrecord_t *tap_hold_record,
+                      uint16_t other_keycode, keyrecord_t *other_record) {
+    if (force_chordal_hold(tap_hold_keycode, other_keycode)) {
+        return true;
+    }
+    return get_chordal_hold_default(tap_hold_record, other_record);
+}
